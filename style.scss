@@ -21,8 +21,8 @@ body {
 .header__container {
     padding: 20px;
     display:grid;
-    @include desktop {
-        grid-template-columns: 5% 1fr 1fr 5%;
+    @include tablet {
+        grid-template-columns: 5% 30% 60% 5%;
     }   
 }
 
@@ -33,20 +33,31 @@ body {
     display:flex;
     justify-content: center;
     align-items:center;
+    @include tablet {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-content: left;
+    }  
     @include desktop {
         grid-column: 2 / 3;
         grid-row: 1 / 3;
-        justify-content: left;
+        
     }}
 
 .header__contact {
     display:flex;
     justify-content: center;
     align-items:center;
-     @include desktop {
+    @include tablet {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        justify-content: right;
+    } 
+
+    @include desktop {
            grid-column: 3 / 4;
            grid-row: 1 / 2;
-           justify-content: right;
+           margin-bottom: -15px;   
         }
     }
     
@@ -55,15 +66,24 @@ body {
     margin-right:auto;
     margin-bottom: 10px;
     @include tablet {
-        display:flex;}
+        display:flex;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        justify-content: center;
+        margin:0;}
+
     @include desktop {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
         justify-content: right;
+       
     }   
 }
 .header__banner {
         width: 100vw;
+        @include tablet {
+            grid-column: 1 / -1;
+            grid-row: 3 / 4;}
         @include desktop {
             height: 250px;
             grid-column: 1 / -1;
@@ -76,6 +96,7 @@ body {
 
 .header__logo {
     width: 64px; 
+    margin-right:10px;
 }
 
 .header__heading {
@@ -110,12 +131,13 @@ body {
 
 .menu__item {
     list-style: none;
+    @include tablet { 
+    margin-left: 15px;
+   
+    }
 }
 
-.menu__item:nth-child(even) {
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 
 .menu__link {
     text-decoration: none;
