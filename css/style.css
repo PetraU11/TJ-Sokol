@@ -43,6 +43,11 @@ body {
   }
 }
 
+.header__menu {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 700px) {
   .header__menu {
     display: flex;
@@ -94,8 +99,8 @@ body {
 }
 
 .bar:nth-child(2) {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .menu__list {
