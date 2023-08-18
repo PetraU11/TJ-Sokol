@@ -8,12 +8,18 @@ body {
 }
 
 .header__container {
-  padding: 20px;
   display: grid;
+  grid-template-columns: 5% 40% 50% 5%;
+  align-items: center;
 }
 @media screen and (min-width: 700px) {
   .header__container {
-    grid-template-columns: 5% 30% 60% 5%;
+    grid-template-columns: 5% 40% 50% 5%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header__container {
+    grid-template-columns: 5% 35% 55% 5%;
   }
 }
 
@@ -21,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 2/3;
 }
 @media screen and (min-width: 700px) {
   .header__logo_heading {
@@ -37,12 +44,12 @@ body {
 }
 
 .header__contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 @media screen and (min-width: 700px) {
   .header__contact {
+    display: flex;
+    align-items: center;
     grid-column: 3/4;
     grid-row: 1/2;
     justify-content: right;
@@ -57,16 +64,15 @@ body {
 }
 
 .header__menu {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
+  grid-column: 3/4;
+  justify-self: end;
 }
 @media screen and (min-width: 700px) {
   .header__menu {
     display: flex;
     grid-column: 1/-1;
     grid-row: 2/3;
-    justify-content: center;
+    justify-self: center;
     margin: 0;
   }
 }
@@ -74,12 +80,13 @@ body {
   .header__menu {
     grid-column: 3/4;
     grid-row: 2/3;
-    justify-content: right;
+    justify-self: end;
   }
 }
 
 .header__banner {
   width: 100vw;
+  grid-row: 2/3;
 }
 @media screen and (min-width: 700px) {
   .header__banner {
