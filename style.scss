@@ -71,6 +71,7 @@ body {
 .header__menu {
     grid-column: 3 / 4;
     justify-self: end;
+    position:relative;
     
     @include tablet {
         display:flex;
@@ -115,8 +116,9 @@ body {
     margin-left: 10px;
 }
 
+
 .bar { 
-    display: block;
+   display:block;
     width: 40px;
     height: 5px;
     background-color: rgba(228,5,33,255);
@@ -134,11 +136,25 @@ body {
 .menu__list {
     display:none;
     @include tablet {
-        display:flex;}
+        display:flex;
+    }
 }
-
+.menuListShown {
+    display: inline-block;
+    position:absolute;
+    background-color:rgba(228,5,33,255);
+    width:100vw;
+    right: -55%;
+    top: 115%;
+    padding-left:0;
+    text-align:center;
+    //transform:translateX(-250%);
+}
 .menu__item {
     list-style: none;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom:solid 2px white; 
     @include tablet { 
     margin-left: 15px;
    
@@ -149,6 +165,31 @@ body {
 
 .menu__link {
     text-decoration: none;
-    color:black;  
+    color:white;
+    @include tablet { 
+        color:black;
+       
+        }
 }
 
+
+
+
+
+
+    /*
+.bar .first {
+    transform:rotate(45deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+.bar .second {
+    display:none;
+}
+
+.bar .third {
+    transform:rotate(-45deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+*/
