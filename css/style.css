@@ -145,11 +145,11 @@ body {
 }
 
 .menuListShown {
-  display: inline-block;
+  display: block;
   position: absolute;
   background-color: rgb(228, 5, 33);
   width: 100vw;
-  right: -55%;
+  right: -48%;
   top: 115%;
   padding-left: 0;
   text-align: center;
