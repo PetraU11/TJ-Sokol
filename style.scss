@@ -24,10 +24,12 @@ body {
     align-items: center;
 
     @include tablet {
-        grid-template-columns: 5% 40% 50% 5%;
+        grid-template-columns: 5% 40% 60% 5%;
+        padding-top:20px;
     }  
     @include desktop {
-        grid-template-columns: 5% 35% 55% 5%;
+        grid-template-columns: 5% 15% 75% 5%;
+     
     }  
 }
 
@@ -132,13 +134,14 @@ body {
     @include tablet {
         display:flex;
         text-align: center;
+        padding-left:0px;
     }
 }
 .menuListShown {
     display: block;
     position:absolute;
     background-color:rgba(228,5,33,255);
-    width:100vw;
+    min-width: 100vw;
     right: -48%;
     top: 140%;
     padding-left:0;
@@ -148,11 +151,15 @@ body {
 }
 .menu__item {
     list-style: none;
-    margin-top: 20px;
+    padding-top: 20px;
     padding-bottom: 20px;
     border-bottom:solid 2px white; 
     @include tablet { 
     margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
    
     }
 }
@@ -178,6 +185,19 @@ body {
         color:black;
        
         }
+}
+
+.menu__link:hover{
+    @include tablet { 
+        color:white;
+}
+}
+.menu__item:hover {
+    background-color: lightblue;
+    @include tablet { 
+    background-color: rgba(228,5,33,255);
+    }
+
 }
 
 

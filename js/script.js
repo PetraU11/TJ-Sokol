@@ -12,6 +12,7 @@ hamburger.addEventListener("click", () => {
     barTwo.style.display = "none"
     barThree.classList.add("third")
     barThree.style.marginTop = "-5px"
+   
      
    if (menu.classList.contains("menuListShown")) {
     menu.classList.remove("menuListShown")
@@ -20,7 +21,6 @@ hamburger.addEventListener("click", () => {
     barTwo.style.display = "block"
     barThree.classList.remove("third")
     barThree.style.marginTop = "10px"
-
    
    } else {
      menu.classList.add("menuListShown")
