@@ -7,21 +7,29 @@ let barThree = document.getElementById("bar3")
 
 
 hamburger.addEventListener("click", () => {
+    barOne.classList.add("first")
+    barOne.style.marginTop = "-5px"
+    barTwo.style.display = "none"
+    barThree.classList.add("third")
+    barThree.style.marginTop = "-5px"
+     
    if (menu.classList.contains("menuListShown")) {
     menu.classList.remove("menuListShown")
+    barOne.classList.remove("first")
+    barOne.style.marginTop = "10px"
+    barTwo.style.display = "block"
+    barThree.classList.remove("third")
+    barThree.style.marginTop = "10px"
+
+   
    } else {
      menu.classList.add("menuListShown")
    } 
 
-   barOne.classList.add("first")
-   barOne.style.marginTop = "-5px"
-   barTwo.classList.add("second")
-   barTwo.style.marginTop = "-5px"
-   barThree.classList.add("third")
-   barThree.style.marginTop = "-5px"
-
-  
+   
 })
+
+
 
 
 /*
