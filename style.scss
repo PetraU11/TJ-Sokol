@@ -100,9 +100,6 @@ body {
     }}
 
 
-
-
-
 .header__logo {
     width: 64px; 
     margin-right:10px;
@@ -129,14 +126,12 @@ body {
         display:none;
     }}
     
-.bar:nth-child(2) {
-    margin-top: 8px;
-    margin-bottom: 8px;}
 
 .menu__list {
     display:none;
     @include tablet {
         display:flex;
+        text-align: center;
     }
 }
 .menuListShown {
@@ -145,8 +140,9 @@ body {
     background-color:rgba(228,5,33,255);
     width:100vw;
     right: -48%;
-    top: 115%;
+    top: 140%;
     padding-left:0;
+    margin-top: 44px;
     text-align:center;
     //transform:translateX(-250%);
 }
@@ -159,6 +155,20 @@ body {
     margin-left: 15px;
    
     }
+}
+
+.menu__item-phone,
+.menu__item-fb {
+    color:white;
+    @include tablet {
+        display:none;
+    }
+
+
+}
+
+.menu__item-fb {
+    margin-bottom: 20px;
 }
 
 .menu__link {
@@ -175,19 +185,18 @@ body {
 
 
 
-    /*
-.bar .first {
+    
+.bar.first {
     transform:rotate(45deg);
     transition: transform 0.4s ease-in-out;
 }
 
-.bar .second {
+.bar.second {
     display:none;
 }
 
-.bar .third {
+.bar.third {
     transform:rotate(-45deg);
     transition: transform 0.4s ease-in-out;
 }
 
-*/
