@@ -3,6 +3,7 @@ let menu = document.getElementById("menuList")
 let barOne = document.getElementById("bar1")
 let barTwo = document.getElementById("bar2") 
 let barThree = document.getElementById("bar3") 
+const mediaQuery = window.matchMedia("(min-widht: 700px)")
 
 
 
@@ -28,6 +29,8 @@ hamburger.addEventListener("click", () => {
 
    
 })
+
+
 
 
 

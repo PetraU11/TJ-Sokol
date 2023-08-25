@@ -14,7 +14,6 @@ body {
 }
 @media screen and (min-width: 700px) {
   .header__container {
-    grid-template-columns: 5% 40% 60% 5%;
     padding-top: 20px;
   }
 }
@@ -53,7 +52,7 @@ body {
     align-items: center;
     grid-column: 3/4;
     grid-row: 1/2;
-    justify-content: right;
+    justify-content: end;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -142,6 +141,10 @@ body {
   }
 }
 
+.menu__list-submenu {
+  display: none;
+}
+
 .menuListShown {
   display: block;
   position: absolute;
@@ -162,12 +165,16 @@ body {
 }
 @media screen and (min-width: 700px) {
   .menu__item {
-    margin-left: 15px;
+    margin-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+
+.menu__item-arrow {
+  margin-left: 5px;
 }
 
 .menu__item-phone,
@@ -197,7 +204,8 @@ body {
 
 @media screen and (min-width: 700px) {
   .menu__link:hover {
-    color: white;
+    color: rgb(228, 5, 33);
+    font-weight: bold;
   }
 }
 
@@ -206,7 +214,7 @@ body {
 }
 @media screen and (min-width: 700px) {
   .menu__item:hover {
-    background-color: rgb(228, 5, 33);
+    background-color: white;
   }
 }
 
