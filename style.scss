@@ -169,6 +169,10 @@ body {
     background-color: rgb(229, 104, 104);
     @include tablet {
         position:absolute;
+        background-color: white;
+        width: 15%;
+        text-align: left;
+        font-style: normal;
         
 
     }  
@@ -242,6 +246,7 @@ font-weight: bold;}
         color: rgba(228,5,33,255);
         font-weight: bold;      
 }}
+
 
 .menu__item:hover {
     background-color: rgb(136, 32, 36);
