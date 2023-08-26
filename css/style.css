@@ -172,7 +172,7 @@ body {
   .menu__list-submenu {
     position: absolute;
     background-color: white;
-    width: 15%;
+    width: 25%;
     text-align: left;
     font-style: normal;
   }
