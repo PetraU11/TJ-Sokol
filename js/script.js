@@ -36,10 +36,7 @@ const arrowColor = () => {
     if (window.innerWidth < 700){
         arrow1.src = "images/sipka-bila-16.png"
         arrow2.src = "images/sipka-bila-16.png"
-
- } 
-}
-
+ }}
 window.onload = arrowColor;
 window.onresize = arrowColor;
 
@@ -51,13 +48,18 @@ menuButton.classList.add(".menu__link.active");
 
 const subMenuSokol = document.getElementById("menuLinkSubSokol")
 subMenuSokol.addEventListener("click",() => {
+    if(document.getElementById("menuListSubmenu").style.display === "block"){
+        document.getElementById("menuListSubmenu").style.display = "none"
+    } else { 
     document.getElementById("menuListSubmenu").style.display = "block";}
-)
+})
 
 const subMenuCviceni = document.getElementById("menuLinkSubCviceni")
 subMenuCviceni.addEventListener("click",() => {
-    document.getElementById("menuListSubmenu2").style.display = "block";}
-)
+   if (document.getElementById("menuListSubmenu2").style.display === "block"){
+    document.getElementById("menuListSubmenu2").style.display = "none"
+} else { document.getElementById("menuListSubmenu2").style.display = "block"}
+})
 
 
 
@@ -66,15 +68,13 @@ subMenuCviceni.addEventListener("click",() => {
 
 
 /*
+const subMenuCviceni = document.getElementById("menuLinkSubCviceni")
+subMenuCviceni.addEventListener("click",() => {
+    document.getElementById("menuListSubmenu2").style.display = "block";}
+)
 
 
-const subMenuSokol = document.getElementById("menuLinkSubSokol")
-const menuListSubmenu = document.querySelector(".menu__list-submenu")
 
-subMenuSokol.addEventListener("click",() => {
-  submenu.getElementById("menuListSubmenu").style.display = "none";
-console.log("funguju")
-})
 menu.innerHTML += ` <p class="menu__item-phone"> +420 720 966 703 </p>
    <a href="https://www.facebook.com/tjsokolkromeriz"> <img class="menu__item-fb" src="images/facebook-white-32.png" alt="logo facebook"> </a>`
 
