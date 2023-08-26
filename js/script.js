@@ -3,7 +3,9 @@ let menu = document.getElementById("menuList")
 let barOne = document.getElementById("bar1")
 let barTwo = document.getElementById("bar2") 
 let barThree = document.getElementById("bar3") 
-const mediaQuery = window.matchMedia("(min-widht: 700px)")
+let arrow1 = document.getElementById("arrow1")
+let arrow2 = document.getElementById("arrow2")
+
 
 
 
@@ -25,10 +27,30 @@ hamburger.addEventListener("click", () => {
    
    } else {
      menu.classList.add("menuListShown")
-   } 
-
-   
+   }  
 })
+
+
+
+const arrowColor = () => {
+    if (window.innerWidth < 700){
+        arrow1.src = "images/sipka-bila-16.png"
+        arrow2.src = "images/sipka-bila-16.png"
+
+ } 
+}
+
+window.onload = arrowColor;
+window.onresize = arrowColor;
+
+
+
+const menuButton = document.getElementById("menuLinkActive")
+menuButton.classList.add(".menu__link.active");
+
+
+
+
 
 
 
@@ -36,6 +58,14 @@ hamburger.addEventListener("click", () => {
 
 
 /*
+
+const subMenuSokol = document.getElementById("menuLinkSubSokol")
+const menuListSubmenu = document.querySelector(".menu__list-submenu")
+
+subMenuSokol.addEventListener("click",() => {
+   menuListSubmenu.style.display = "block"
+console.log("funguju")
+})
 menu.innerHTML += ` <p class="menu__item-phone"> +420 720 966 703 </p>
    <a href="https://www.facebook.com/tjsokolkromeriz"> <img class="menu__item-fb" src="images/facebook-white-32.png" alt="logo facebook"> </a>`
 

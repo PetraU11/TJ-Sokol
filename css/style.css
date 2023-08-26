@@ -203,6 +203,13 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+  .menu__link.active {
+    color: rgb(228, 5, 33);
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 700px) {
   .menu__link:hover {
     color: rgb(228, 5, 33);
     font-weight: bold;

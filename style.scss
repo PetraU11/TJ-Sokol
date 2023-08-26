@@ -196,6 +196,11 @@ body {
        
         }
 }
+.menu__link.active {
+    @include tablet {
+color: rgba(228,5,33,255); 
+font-weight: bold;}
+}
 
 .menu__link:hover{
     @include tablet { 
