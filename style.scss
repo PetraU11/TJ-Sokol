@@ -74,13 +74,17 @@ body {
     grid-column: 3 / 4;
     justify-self: end;
     position:relative;
+    width:100%; //hmg menu rozložené aby sedělo
+    padding-left: 70%;
     
     @include tablet {
         display:flex;
         grid-column: 1 / -1;
         grid-row: 2 / 3;
         justify-self: center;
-        margin:0;}
+        margin:0;
+        padding-left: 0px;
+        width: auto;}
 
     @include desktop {
         grid-column: 3 / 4;
@@ -142,12 +146,14 @@ body {
     display:none;
 }
 
+
+
 .menuListShown {
     display: block;
     position:absolute;
     background-color:rgba(228,5,33,255);
     min-width: 100vw;
-    right: -48%;
+    right: -10%; //-48
     top: 140%;
     padding-left:0;
     margin-top: 44px;

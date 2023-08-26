@@ -49,7 +49,15 @@ const menuButton = document.getElementById("menuLinkActive")
 menuButton.classList.add(".menu__link.active");
 
 
+const subMenuSokol = document.getElementById("menuLinkSubSokol")
+subMenuSokol.addEventListener("click",() => {
+    document.getElementById("menuListSubmenu").style.display = "block";}
+)
 
+const subMenuCviceni = document.getElementById("menuLinkSubCviceni")
+subMenuCviceni.addEventListener("click",() => {
+    document.getElementById("menuListSubmenu2").style.display = "block";}
+)
 
 
 
@@ -59,11 +67,12 @@ menuButton.classList.add(".menu__link.active");
 
 /*
 
+
 const subMenuSokol = document.getElementById("menuLinkSubSokol")
 const menuListSubmenu = document.querySelector(".menu__list-submenu")
 
 subMenuSokol.addEventListener("click",() => {
-   menuListSubmenu.style.display = "block"
+  submenu.getElementById("menuListSubmenu").style.display = "none";
 console.log("funguju")
 })
 menu.innerHTML += ` <p class="menu__item-phone"> +420 720 966 703 </p>
@@ -79,6 +88,6 @@ const para = document.createElement("p")
    const node = document.createTextNode("+420 720 966 703")
    para.appendChild(node)
     menu.appendChild(para)
+
+
 */
-
-
