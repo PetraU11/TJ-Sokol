@@ -56,17 +56,20 @@ const subMenuSokol = document.getElementById("menuLinkSubSokol")
 subMenuSokol.addEventListener("click",() => {
     if(document.getElementById("menuListSubmenu").style.display === "block"){
         document.getElementById("menuListSubmenu").style.display = "none"
-
     } else { 
-    document.getElementById("menuListSubmenu").style.display = "block";}
+    document.getElementById("menuListSubmenu").style.display = "block";
+    document.getElementById("menuListSubmenu2").style.display = "none"
+    }
 })
 
 const subMenuCviceni = document.getElementById("menuLinkSubCviceni")
 subMenuCviceni.addEventListener("click",() => {
    if (document.getElementById("menuListSubmenu2").style.display === "block"){
     document.getElementById("menuListSubmenu2").style.display = "none"
-} else { document.getElementById("menuListSubmenu2").style.display = "block"}
+} else { document.getElementById("menuListSubmenu2").style.display = "block"
+document.getElementById("menuListSubmenu").style.display = "none"}
 })
+
 
 
 
