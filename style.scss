@@ -285,12 +285,20 @@ main{
         display:grid;
         grid-template-columns: 5% 1fr 1fr 1fr 5%;
     }
+    @include desktop {
+        grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .footer img {
     width: 25px;
     @include tablet {
     width: 35px;}
+    @include desktop {
+    width: 48px;
+    }
 }
 
 .footer a {
@@ -309,12 +317,27 @@ main{
     @include tablet {
         grid-column: 3 / 4;
     }
+   
 }
 
 .footer__facebook {
     @include tablet {
         grid-column: 4 / 5;
 
+    }
+}
+
+.footer__address-map {
+    @include desktop {
+        display:none;
+    }
+}
+
+.footer__map {
+    display:none;
+    @include desktop {
+        display:inline-block;
+        grid-column: 5 / 6;
     }
 }
 
