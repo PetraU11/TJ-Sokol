@@ -15,7 +15,7 @@ hamburger.addEventListener("click", () => {
     barThree.style.marginTop = "-5px"
    
      
-   if (menu.classList.contains("menuListShown")) {
+   if (menu.classList.contains("menuListShown") ) {
     menu.classList.remove("menuListShown")
     barOne.classList.remove("first")
     barOne.style.marginTop = "10px"
@@ -25,8 +25,26 @@ hamburger.addEventListener("click", () => {
    
    } else {
      menu.classList.add("menuListShown")
-   }  
+   } 
+   
 })
+
+// Odstranit .menuListShown nad 700px a bars do původní polohy při přechod zpět pod 700px
+
+let removeClass = () => {
+    if(window.innerWidth > 699){
+        menu.classList.remove("menuListShown")
+    } else if ( window.innerWidth < 700){
+        barOne.classList.remove("first")
+        barOne.style.marginTop = "10px"
+        barTwo.style.display = "block"
+        barThree.classList.remove("third")
+        barThree.style.marginTop = "10px"
+    }}
+
+window.addEventListener("resize", removeClass)
+removeClass()
+
 
 // Výměna šipek pod/nad 700px 
 
