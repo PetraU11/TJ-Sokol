@@ -1,13 +1,11 @@
+
+//Hamburger menu click show/hide a animace ikony
+
 let hamburger = document.getElementById("menuBars")
 let menu = document.getElementById("menuList") 
 let barOne = document.getElementById("bar1")
 let barTwo = document.getElementById("bar2") 
 let barThree = document.getElementById("bar3") 
-let arrow1 = document.getElementById("arrow1")
-let arrow2 = document.getElementById("arrow2")
-
-
-
 
 hamburger.addEventListener("click", () => {
     barOne.classList.add("first")
@@ -30,26 +28,35 @@ hamburger.addEventListener("click", () => {
    }  
 })
 
+// Výměna šipek pod/nad 700px 
 
+let arrow1 = document.getElementById("arrow1")
+let arrow2 = document.getElementById("arrow2")
 
 const arrowColor = () => {
     if (window.innerWidth < 700){
         arrow1.src = "images/sipka-bila-16.png"
         arrow2.src = "images/sipka-bila-16.png"
+ }else {
+    arrow1.src = "images/sipka-cerna-16.png"
+    arrow2.src = "images/sipka-cerna-16.png"
  }}
 window.onload = arrowColor;
 window.onresize = arrowColor;
 
 
+// Navigace - kde je uživatel, označení červenou barvou
 
 const menuButton = document.getElementById("menuLinkActive")
 menuButton.classList.add(".menu__link.active");
 
+// Submenu u O sokolu a Cvičení click show/hide 
 
 const subMenuSokol = document.getElementById("menuLinkSubSokol")
 subMenuSokol.addEventListener("click",() => {
     if(document.getElementById("menuListSubmenu").style.display === "block"){
         document.getElementById("menuListSubmenu").style.display = "none"
+
     } else { 
     document.getElementById("menuListSubmenu").style.display = "block";}
 })

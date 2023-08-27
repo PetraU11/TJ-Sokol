@@ -249,17 +249,28 @@ body {
   }
 }
 
+@media screen and (min-width: 700px) {
+  .menu__link:active {
+    color: rgb(91, 10, 13);
+  }
+}
+
 .menu__item:hover {
   background-color: rgb(136, 32, 36);
 }
 @media screen and (min-width: 700px) {
   .menu__item:hover {
-    background-color: white;
+    background-color: transparent;
   }
 }
 
 .menu__item:active {
   background-color: rgb(91, 10, 13);
+}
+@media screen and (min-width: 700px) {
+  .menu__item:active {
+    background-color: transparent;
+  }
 }
 
 .menu__item:visited {

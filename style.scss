@@ -233,15 +233,25 @@ font-weight: bold;}
         font-weight: bold;      
 }}
 
+.menu__link:active{
+    @include tablet { 
+    color: rgb(91, 10, 13);
+                 
+}}
+
 
 .menu__item:hover {
     background-color: rgb(136, 32, 36);
     @include tablet { 
-    background-color: white;
+    background-color: transparent;
     }}
 
 .menu__item:active {
     background-color: rgb(91, 10, 13); 
+    @include tablet { 
+        background-color: transparent;
+        }
+
 }
 
 .menu__item:visited {
