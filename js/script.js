@@ -45,6 +45,7 @@ window.onload = arrowColor;
 window.onresize = arrowColor;
 
 
+
 // Navigace - kde je uživatel, označení červenou barvou
 
 const menuButton = document.getElementById("menuLinkActive")

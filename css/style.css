@@ -124,6 +124,12 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 700px) {
+  .menu__bars {
+    display: none;
+  }
+}
+
 .bar {
   display: block;
   width: 40px;
