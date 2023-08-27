@@ -281,4 +281,64 @@ body {
 
 .menu__item:visited {
   background-color: #E3879E;
+}
+
+main {
+  height: 500px;
+}
+
+.footer {
+  background-color: rgb(228, 5, 33);
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 700px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+  }
+}
+
+.footer img {
+  width: 25px;
+}
+@media screen and (min-width: 700px) {
+  .footer img {
+    width: 35px;
+  }
+}
+
+.footer a {
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  .footer__address {
+    grid-column: 2/3;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .footer__contact {
+    grid-column: 3/4;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .footer__facebook {
+    grid-column: 4/5;
+  }
+}
+
+.footer__copyright {
+  margin-top: 35px;
+  font-size: 10px;
+}
+@media screen and (min-width: 700px) {
+  .footer__copyright {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
 }/*# sourceMappingURL=style.css.map */
