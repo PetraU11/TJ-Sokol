@@ -284,11 +284,14 @@ main{
     @include tablet {
         display:grid;
         grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        
     }
     @include desktop {
         grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;;
         padding-top: 30px;
         padding-bottom: 30px;
+        align-items: center;
+       
     }
 }
 
@@ -343,9 +346,9 @@ main{
 
 .footer__copyright {
     margin-top: 35px;
-    font-size: 12px;
     @include tablet {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
+        
     }
 }
