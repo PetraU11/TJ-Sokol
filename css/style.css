@@ -287,21 +287,76 @@ main {
   height: 500px;
 }
 
+.membership {
+  padding: 10px;
+  height: 250px;
+  background-image: url(../images/deti.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.membership__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.521);
+  text-align: center;
+  color: white;
+}
+
+.membership__header {
+  flex-basis: 100%;
+  margin-bottom: 15px;
+}
+
+.membership__buttons {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+}
+
+.membership__buttons a {
+  background-color: red;
+  border-radius: 10px;
+  border: white 2px solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+  width: 90px;
+}
+
+.membership__buttons a > p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.membership__intro {
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
 .footer {
   background-color: rgb(228, 5, 33);
+}
+
+.footer__container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 700px) {
-  .footer {
+  .footer__container {
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 5%;
   }
 }
 @media screen and (min-width: 1000px) {
-  .footer {
+  .footer__container {
     grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
     padding-top: 30px;
     padding-bottom: 30px;
