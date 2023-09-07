@@ -5,6 +5,12 @@
 body {
   margin: 0;
   padding: 0;
+  color: rgb(51, 35, 35);
+  background-color: rgb(245, 245, 245);
+}
+
+section {
+  text-align: center;
 }
 
 .header__container {
@@ -177,7 +183,7 @@ body {
 @media screen and (min-width: 700px) {
   .menu__list-submenu {
     position: absolute;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     width: 25%;
     text-align: left;
     font-style: normal;
@@ -200,7 +206,7 @@ body {
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px rgb(245, 245, 245);
 }
 @media screen and (min-width: 700px) {
   .menu__item {
@@ -218,7 +224,7 @@ body {
 
 .menu__item-phone,
 .menu__item-fb {
-  color: white;
+  color: rgb(245, 245, 245);
 }
 @media screen and (min-width: 700px) {
   .menu__item-phone,
@@ -233,11 +239,11 @@ body {
 
 .menu__link {
   text-decoration: none;
-  color: white;
+  color: rgb(245, 245, 245);
 }
 @media screen and (min-width: 700px) {
   .menu__link {
-    color: black;
+    color: rgb(51, 35, 35);
   }
 }
 
@@ -283,10 +289,6 @@ body {
   background-color: #E3879E;
 }
 
-main {
-  height: 500px;
-}
-
 .membership {
   padding: 10px;
   height: 250px;
@@ -301,7 +303,7 @@ main {
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.521);
   text-align: center;
-  color: white;
+  color: rgb(245, 245, 245);
 }
 
 .membership__header {
@@ -316,13 +318,13 @@ main {
 }
 
 .membership__buttons a {
-  background-color: red;
+  background-color: rgb(228, 5, 33);
   border-radius: 10px;
-  border: white 2px solid;
+  border: rgb(245, 245, 245) 2px solid;
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
-  color: white;
+  color: rgb(245, 245, 245);
   width: 90px;
 }
 
@@ -336,6 +338,24 @@ main {
   padding-bottom: 5px;
 }
 
+.about {
+  padding: 10px;
+  background-color: rgb(228, 5, 33);
+  color: whitesmoke;
+}
+
+.about__buttons {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+}
+
+.rent__buttons {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+}
+
 .footer {
   background-color: rgb(228, 5, 33);
 }
@@ -344,7 +364,7 @@ main {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  color: white;
+  color: rgb(245, 245, 245);
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -379,7 +399,7 @@ main {
 }
 
 .footer a {
-  color: white;
+  color: rgb(245, 245, 245);
 }
 
 @media screen and (min-width: 700px) {
