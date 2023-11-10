@@ -283,97 +283,12 @@ font-weight: bold;}
 }
 
 
-
-
-
 //MAIN 
 
 
-
-// Přihláška do sokola
-
-.membership {
-    padding: 10px;
-    height: 250px;
-    background-image: url(../images/deti.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+main{
+    height: 500px;
 }
-
-.membership__wrapper {
-   display: flex;
-   flex-wrap: wrap;
-   height: 220px;
-    background-color: rgba(0, 0, 0, 0.521);
-    text-align:center;
-    color:$primaryWhite;  
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.membership__header {
-    flex-basis: 100%;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-
-.membership__intro {
-    margin-top: 0px;
-}
-
-.membership__buttons {
-    display:flex;
-    flex-basis: 100%;
-    justify-content: space-evenly;
-}
-
-.membership__buttons a {
-    background-color: $primary;
-    border-radius:10px;
-    border: $primaryWhite 2px solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration:none;
-    color:$primaryWhite;
-    width: 90px;
-}
-
-.membership__buttons a > p {
- margin-top: 5px;
-
-
-}
-
-
-
-//gallery
-
-
-// about
-
-.about {
-    background-color: $primary;
-    color:whitesmoke;
-}
-
-.about__buttons {
-    display:flex;
-    flex-basis: 100%;
-    justify-content: space-evenly;
-}
-
-
-
-//rent
-
-.rent__buttons {
-    display:flex;
-    flex-basis: 100%;
-    justify-content: space-evenly;
-}
-
-
     
 // FOOTER
 
