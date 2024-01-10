@@ -47,11 +47,8 @@ footer {
 
     @include tablet {
         padding-top:20px;
-    }  
+        grid-template-columns: 5% 45% 45% 5%;
 
-    @include desktop {
-        grid-template-columns: 5% 15% 75% 5%;
-     
     }  
 }
 
@@ -69,9 +66,7 @@ footer {
         width: auto;
     }  
     @include desktop {
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
-        margin-left: auto;
+        
         
     }}
 
@@ -85,12 +80,11 @@ footer {
     grid-row: 1 / 2;
     justify-content: end;
     } 
-
     @include desktop {
-           grid-column: 3 / 4;
-           grid-row: 1 / 2;
-           margin-bottom: -15px;   
-        }
+        font-size: 1.2rem;
+        padding-right: 24px;
+    }
+    
     }
     
 .header__menu {
@@ -109,12 +103,7 @@ footer {
         padding-left: 0px;
         width: auto;}
 
-    @include desktop {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-        justify-self: end;
-       
-    }   
+    
 }
 .header__banner {
         width: 100vw;
@@ -132,10 +121,16 @@ footer {
 .header__logo {
     width: 80px; 
     margin-right:10px;
+    @include desktop {
+        width: 96px;
+    }
 }
 
 .header__heading {
     font-size: 24px;
+    @include desktop {
+        font-size: 1.8rem;
+    }
 }
 
 .header__contact-fb {
@@ -183,7 +178,13 @@ footer {
         text-align: center;
         padding-left:0px;
         margin-bottom:0px;
+    
+    @include desktop {
+        font-size: 1.2rem;
+        gap: 15px;
     }
+    }
+  
 }
 
 
