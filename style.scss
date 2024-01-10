@@ -4,9 +4,15 @@
 @mixin desktop {
     @media screen and (min-width: 1000px) {@content; }}
 
-$primary: rgba(228,5,33,255);
-$primaryBlack: rgb(51, 35, 35);
-$primaryWhite: rgb(245,245,245);
+$primaryRed:rgb(228,5,33);
+$additionalRed: rgb(200,0,30);
+$primaryBlack: rgb(0, 0, 0);
+$primaryWhite: rgb(255,255,255);
+$additonalBlue:rgb(45,46,135);
+$sletBlue:rgb(11,31,58);
+$sletRed:rgb(255,0,40);
+$sletPink: rgb(255, 217, 217);
+
 
 
 
@@ -17,8 +23,9 @@ $primaryWhite: rgb(245,245,245);
 body {
     margin: 0;
     padding: 0;
-    color:$primaryBlack;
+    color:$sletBlue;
     background-color: $primaryWhite;
+
 }
 
 section {
@@ -35,7 +42,7 @@ footer {
 .header__container {
 
     display:grid;
-    grid-template-columns: 5% 40% 50% 5%; 
+    grid-template-columns: 5% 70% 20% 5%; 
     align-items: center;
 
     @include tablet {
@@ -54,7 +61,7 @@ footer {
     align-items:center;
     grid-column: 2 / 3;
     width: 80%;
-    margin-left: 20px;
+   
     @include tablet {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
@@ -91,7 +98,7 @@ footer {
     justify-self: end;
     position:relative;
     width:100%; //hmg menu rozložené aby sedělo
-    padding-left: 70%;
+   
     
     @include tablet {
         display:flex;
@@ -117,14 +124,13 @@ footer {
             grid-column: 1 / -1;
             grid-row: 3 / 4;}
         @include desktop {
-            height: 250px;
             grid-column: 1 / -1;
             grid-row: 3 / 4;
     }}
 
 
 .header__logo {
-    width: 64px; 
+    width: 80px; 
     margin-right:10px;
 }
 
@@ -146,7 +152,7 @@ footer {
    display:block;
     width: 40px;
     height: 5px;
-    background-color: $primary;
+    background-color: $sletBlue;
     border-radius: 10%;
     margin-top: 10px;
 
@@ -176,6 +182,7 @@ footer {
         display:flex;
         text-align: center;
         padding-left:0px;
+        margin-bottom:0px;
     }
 }
 
@@ -197,7 +204,7 @@ footer {
 .menuListShown {
     display: block;
     position:absolute;
-    background-color:$primary;
+    background-color:$sletBlue;
     min-width: 100vw;
     right: -10%; //-48
     top: 140%;
@@ -247,13 +254,13 @@ footer {
 
 .menu__link.active {
     @include tablet {
-color: $primary; 
+color: $primaryRed; 
 font-weight: bold;}
 }
 
 .menu__link:hover{
     @include tablet { 
-        color: $primary;
+        color: $primaryRed;
         font-weight: bold;      
 }}
 
@@ -293,7 +300,7 @@ main{
 // FOOTER
 
 .footer {
-    background-color: $primary;
+    background-color: $sletBlue;
     
 }
 
